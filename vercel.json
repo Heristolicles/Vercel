@@ -5,9 +5,10 @@
   "framework": "nextjs",
   "env": {
     "NEXTAUTH_URL": "https://your-domain.vercel.app",
-    "DATABASE_URL": "@database_url",
     "NEXTAUTH_SECRET": "@nextauth_secret",
-    "ENCRYPTION_KEY": "@encryption_key"
+    "ENCRYPTION_KEY": "@encryption_key",
+    "POSTGRES_PRISMA_URL": "@postgres_prisma_url",
+    "POSTGRES_URL_NON_POOLING": "@postgres_url_non_pooling"
   },
   "github": {
     "silent": true

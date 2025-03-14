@@ -3,8 +3,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // Vercel-generated for Prisma
+  directUrl = env("POSTGRES_URL_NON_POOLING") // Vercel-generated for direct connections
 }
 
 model User {
